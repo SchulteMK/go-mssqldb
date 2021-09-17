@@ -26,6 +26,8 @@ import (
 //   log.Printf("return status = %d", rs)
 type ReturnStatus int32
 
+var Location = time.Local
+
 var driverInstance = &Driver{processQueryText: true}
 var driverInstanceNoProcess = &Driver{processQueryText: false}
 
